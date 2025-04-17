@@ -1,52 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Project 2: Persuasive vs. Misleading Visualizations</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2em auto;
-            max-width: 900px;
-            line-height: 1.6;
-        }
-        img {
-            max-width: 100%;
-            border: 1px solid #ccc;
-            margin-bottom: 1em;
-        }
-        h2 {
-            color: #2c3e50;
-        }
-        .caption {
-            font-style: italic;
-            font-size: 0.95em;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2: NYPD Complaint Visualization</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    header, section {
+      padding: 20px 40px;
+      max-width: 960px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    figure {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 20px 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    figcaption {
+      font-size: 0.95em;
+      color: #555;
+      margin-top: 8px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Project 2: Persuasive & Deceptive Visualizations</h1>
+    <p><strong>Claim:</strong> The NYPD's accountability system fails to effectively address most complaints.</p>
+  </header>
 
-    <h1>Project 2: Persuasive or Misleading Visualizations?</h1>
+  <section>
+    <h2>Visualizations Supporting the Claim</h2>
+    <figure>
+      <img src="images/A1.jpg" alt="A1: Unsubstantiated Complaints Bar Chart">
+      <figcaption><strong>Figure A1:</strong> Over 70% of NYPD complaints are not substantiated. This supports the claim that the accountability system fails to effectively address public concerns.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/A2.jpg" alt="A2: Diverging Bar Chart by Precinct">
+      <figcaption><strong>Figure A2:</strong> In the top 5 precincts with the most complaints, unsubstantiated cases greatly outnumber substantiated ones, reinforcing the claim of systemic failure.</figcaption>
+    </figure>
+  </section>
 
-    <h2>Claim A: NYPD’s Accountability System Fails — Most Complaints Are Dismissed</h2>
-    <img src="propose.png" alt="Chart A - Bar Plot">
-    <p class="caption">Chart A: Over 70% of NYPD complaints were not substantiated, suggesting systemic failure in police accountability.</p>
+  <section>
+    <h2>Visualizations Opposing the Claim</h2>
+    <figure>
+      <img src="images/B1.jpg" alt="B1: Precinct Map with Substantiation Rates">
+      <figcaption><strong>Figure B1:</strong> Many precincts show relatively high substantiation rates. This suggests the NYPD does process and address complaints, challenging the original claim.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/B2.jpg" alt="B2: Dot Density of Substantiated Complaints">
+      <figcaption><strong>Figure B2:</strong> A dot density map shows substantiated complaints widely distributed across NYC, implying that accountability actions are occurring in many areas.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Reflection and Analysis</h2>
     <p>
-        This visualization supports the claim that the NYPD’s internal complaint handling system is ineffective. By using a red bar to emphasize the number of unsubstantiated complaints (23,749), it guides the viewer’s emotional reaction toward concern. The straightforward bar chart makes the imbalance visually stark and easily interpretable.
+      The first two visualizations support the claim by showing that most complaints are unsubstantiated city-wide and within high-volume precincts. In contrast, the opposing visualizations emphasize spatial coverage and the volume of substantiated complaints.
     </p>
-
-    <h2>Claim B: Some NYPD Precincts Show High Substantiation Rates</h2>
-    <img src="oppose.png" alt="Chart B - Precinct Map">
-    <p class="caption">Chart B: In some NYPD precincts, more than 70–80% of complaints are substantiated, suggesting localized accountability.</p>
     <p>
-        This visualization argues against the claim by highlighting that not all complaints are dismissed. In several precincts, the substantiation rate exceeds 70%, suggesting that in some areas, accountability mechanisms are working. The green color palette reinforces this positive narrative.
+      Personally, I find the second set (B1 and B2) more persuasive. The green color palette and geographic framing convey an image of active response and accountability.
     </p>
-
-    <h2>Reflection</h2>
     <p>
-        While both visualizations are based on the same dataset, the design choices — color, aggregation, and framing — guide viewer perception. Chart A aggregates all complaints to emphasize overall failure, while Chart B disaggregates by location to show potential progress. Together, they demonstrate that data visualization is not purely objective: it carries rhetorical power depending on how the story is framed. For ethical visualization, transparency in intent, labeling, and context is key.
+      <strong>Deceptive techniques used:</strong><br>
+      - Color symbolism: red = danger/failure, green = action/success<br>
+      - Proportional vs. absolute emphasis: A1/A2 focus on ratio; B2 on total volume<br>
+      - Geographic boundaries in B1 frame substantiation positively by omitting unsubstantiated context
     </p>
+  </section>
 
+  <footer>
+    <p>Created by Jack Sun | Data Visualization Project 2 | NYPD Complaints</p>
+  </footer>
 </body>
 </html>
