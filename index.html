@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project 2: NYPD Complaint Visualization</title>
   <style>
     body {
@@ -53,26 +53,12 @@
 
   <section>
     <h2>Visualizations Supporting the Claim</h2>
-    <figure>
-      <img src="images/A1.png" alt="A1: Unsubstantiated Complaints Bar Chart">
-      <figcaption><strong>Figure A1:</strong> Over 70% of NYPD complaints are not substantiated. This supports the claim that the accountability system fails to effectively address public concerns.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/A2.png" alt="A2: Diverging Bar Chart by Precinct">
-      <figcaption><strong>Figure A2:</strong> In the top 5 precincts with the most complaints, unsubstantiated cases greatly outnumber substantiated ones, reinforcing the claim of systemic failure.</figcaption>
-    </figure>
+    <div id="support-section"></div>
   </section>
 
   <section>
     <h2>Visualizations Opposing the Claim</h2>
-    <figure>
-      <img src="images/B1.png" alt="B1: Precinct Map with Substantiation Rates">
-      <figcaption><strong>Figure B1:</strong> Many precincts show relatively high substantiation rates. This suggests the NYPD does process and address complaints, challenging the original claim.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/B2.png" alt="B2: Dot Density of Substantiated Complaints">
-      <figcaption><strong>Figure B2:</strong> A dot density map shows substantiated complaints widely distributed across NYC, implying that accountability actions are occurring in many areas.</figcaption>
-    </figure>
+    <div id="oppose-section"></div>
   </section>
 
   <section>
@@ -84,9 +70,9 @@
       Personally, I find the second set (B1 and B2) more persuasive. The green color palette and geographic framing convey an image of active response and accountability.
     </p>
     <p>
-      <strong>Deceptive techniques used:</strong><br>
-      - Color symbolism: red = danger/failure, green = action/success<br>
-      - Proportional vs. absolute emphasis: A1/A2 focus on ratio; B2 on total volume<br>
+      <strong>Deceptive techniques used:</strong><br />
+      - Color symbolism: red = danger/failure, green = action/success<br />
+      - Proportional vs. absolute emphasis: A1/A2 focus on ratio; B2 on total volume<br />
       - Geographic boundaries in B1 frame substantiation positively by omitting unsubstantiated context
     </p>
   </section>
@@ -94,5 +80,7 @@
   <footer>
     <p>Created by Jack Sun | Data Visualization Project 2 | NYPD Complaints</p>
   </footer>
+
+  <script src="global.js" type="module"></script>
 </body>
 </html>

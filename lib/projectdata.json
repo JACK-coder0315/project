@@ -1,0 +1,26 @@
+[
+  {
+    "section": "support",
+    "image": "images/A1.png",
+    "alt": "A1: Unsubstantiated Complaints Bar Chart",
+    "caption": "Figure A1: Over 70% of NYPD complaints are not substantiated. This supports the claim that the accountability system fails to effectively address public concerns."
+  },
+  {
+    "section": "support",
+    "image": "images/A2.png",
+    "alt": "A2: Diverging Bar Chart by Precinct",
+    "caption": "Figure A2: In the top 5 precincts with the most complaints, unsubstantiated cases greatly outnumber substantiated ones, reinforcing the claim of systemic failure."
+  },
+  {
+    "section": "oppose",
+    "image": "images/B1.png",
+    "alt": "B1: Precinct Map with Substantiation Rates",
+    "caption": "Figure B1: Many precincts show relatively high substantiation rates. This suggests the NYPD does process and address complaints, challenging the original claim."
+  },
+  {
+    "section": "oppose",
+    "image": "images/B2.png",
+    "alt": "B2: Dot Density of Substantiated Complaints",
+    "caption": "Figure B2: A dot density map shows substantiated complaints widely distributed across NYC, implying that accountability actions are occurring in many areas."
+  }
+]
